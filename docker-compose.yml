@@ -1,0 +1,10 @@
+
+version: "3.9"
+services:
+  sankhya-senha:
+    build:
+      dockerfile: Dockerfile
+    container_name: sankhya-senha
+    command: tail -f /dev/null
+    environment:
+    - TZ=America/Sao_Paulo
