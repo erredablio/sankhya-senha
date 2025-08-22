@@ -1,8 +1,8 @@
 FROM alpine:latest
 LABEL maintainer="Sistemas Ramada <sistema@ramada.com.br>"
 
-ENV WILDFLY_LOCATION /opt/wildfly
-ENV WILDFLY_DOWNLOAD https://grfetvhg7pdl.compat.objectstorage.sa-saopaulo-1.oraclecloud.com/downloads-sankhya-tools/Wildfly_11.0_Sankhya_mod_06.zip
+ENV WILDFLY_LOCATION="/opt/wildfly"
+ENV WILDFLY_DOWNLOAD="https://grfetvhg7pdl.compat.objectstorage.sa-saopaulo-1.oraclecloud.com/downloads-sankhya-tools/Wildfly_11.0_Sankhya_mod_06.zip"
 
 ADD $WILDFLY_DOWNLOAD $WILDFLY_LOCATION/
 ADD start.sh /start.sh
