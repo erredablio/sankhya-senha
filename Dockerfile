@@ -11,7 +11,7 @@ WORKDIR $WILDFLY_LOCATION
 RUN apk add openjdk11
 RUN apk add zip
 RUN unzip Wildfly_11.0_Sankhya_mod_06.zip
-RUN mv -f wildfly_producao/* $WILDFLY_LOCATION
+RUN mv -f ./Wildfly_11.0_Sankhya_mod_06/wildfly_producao/* $WILDFLY_LOCATION
 RUN rm -rf Wildfly_11.0_Sankhya_mod_06.zip wildfly_producao
 RUN chmod +x /start.sh
 
